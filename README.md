@@ -1,1 +1,1 @@
-Personal Portfoliogi
+Personal Portfolio
