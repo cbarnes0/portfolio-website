@@ -11,20 +11,137 @@
 <body>
 
     <header class="header">
-        
         <a href="#home" class="logo">
             Carson Barnes
         </a>
 
         <nav class="navbar">
-            <a href="About">About</a>
-            <a href="Projects">Projects</a>
-            <a href="Contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
 
-        <button class="button">Contact Me</button>
-
+        <button class="button" onclick="document.getElementById('contact').scrollIntoView()">Let's Chat</button>
     </header>
+
+    <section id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Hi 👋, I'm <span class="highlight">Carson Barnes</span></h1>
+                <p>I'm a passionate developer focused on creating elegant and efficient solutions to complex problems.</p>
+                <!-- <button class="button" onclick="document.getElementById('projects').scrollIntoView()">View My Work</button> -->
+            </div>
+            <div class="hero-image-container">
+                <div class="pixel-cloud cloud-1"></div>
+                <div class="pixel-cloud cloud-2"></div>
+                <div class="pixel-cloud cloud-3"></div>
+                <div class="pixel-cloud cloud-4"></div>
+                <div class="circle-frame">
+                    <img src="./images/snorlax.png" alt="Snorlax">
+                </div>
+                <div class="pixel-cloud cloud-5"></div>
+                <div class="pixel-cloud cloud-6"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-cards">
+            <div class="about-card">
+                <h3>Work Experience</h3>
+                <div class="card-content">
+
+                </div>
+            </div>
+            <div class="about-card">
+                <h3>Skills & Education</h3>
+                <div class="card-content">
+                    
+                </div>
+            </div>
+            <div class="about-card">
+                <h3>Hobbies & Fun Facts</h3>
+                <div class="card-content">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img">Project Image</div>
+                <div class="project-content">
+                    <h3>E-commerce Platform</h3>
+                    <p>A fully responsive e-commerce solution with integrated payment processing and inventory management.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">Project Image</div>
+                <div class="project-content">
+                    <h3>Task Management App</h3>
+                    <p>A productivity application designed to help users organize tasks and manage their time efficiently.</p>
+                    <div class="project-tags">
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">CSS3</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">Project Image</div>
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>A clean, modern personal portfolio website showcasing skills and projects with a minimalist design.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="button">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">GitHub</a>
+            <a href="#" class="social-link">Twitter</a>
+        </div>
+        <p class="footer-text">© 2025 Carson Barnes. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
