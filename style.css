@@ -1,7 +1,7 @@
 :root {
   --clean-text-color: #37352F;
   --clean-background-color: #f3f3f3;
-  --accent-color: #0f0f0f;
+  --accent-color: #000000;
   --section-padding: 6rem 15%;
 }
 
@@ -26,7 +26,7 @@ body {
   
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
-  margin: 1.2em 0 0.5em;
+  /* margin: 1.2em 0 0.5em; */
   line-height: 1.2;
 }
 
@@ -344,9 +344,9 @@ section {
   }
 }
 
-.highlight {
+/* .highlight {
   color: var(--accent-color);
-}
+} */
 
 .section-title {
   font-size: 2.5rem;
